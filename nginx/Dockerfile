@@ -4,6 +4,7 @@ MAINTAINER Mahmoud Zalt <mahmoud@zalt.me>
 
 ADD nginx.conf /etc/nginx/
 ADD laravel.conf /etc/nginx/sites-available/
+ADD phpmyadmin.conf /etc/nginx/sites-available/
 
 RUN echo "upstream php-upstream { server php-fpm:9000; }" > /etc/nginx/conf.d/upstream.conf
 
